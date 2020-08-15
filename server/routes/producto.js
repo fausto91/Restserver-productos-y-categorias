@@ -46,10 +46,10 @@ app.get('/producto', verificarToken,(req,res)=>{
 app.get('/producto/:id', verificarToken,(req,res)=>{
 
     let id = req.params.id; 
-    let body=req.body;
-     let disponible ={
-         disponible:body.disponible
-     }
+    
+    //  let disponible ={
+    //      disponible:body.disponible
+    //  }
 
      
      
