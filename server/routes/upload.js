@@ -8,7 +8,10 @@ const fs = require('fs');
 const path = require('path');
 
 
-app.use(fileUpload());
+app.use(fileUpload({
+    useTempFiles:true,
+    tempFileDir: '/tmp/'
+}));
 
 app.put('/upload/:tipo/:id',function(req,res){
 
